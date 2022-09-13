@@ -29,12 +29,12 @@ const newUsers = {
 	"category": {
 	  "name": "string"
 	},
-	"firstname": "test",
-	"lastname": "test2",
+	"firstname": "taner",
+	"lastname": "tanerrrrr",
     "email":"test@gmil.com",
     "phone":"97865443",
-    "date":"20/30/2022",
-	"status": "available"
+    "date":"09/13/2022",
+    "status": "available"
 }
 
 
@@ -47,8 +47,8 @@ describe("Testing right2drive with chaitest", () => {
             .end((err, res) => {
                 expect(res).to.have.status(200)
                 expect(res).to.have.header('content-type', 'application/json; charset=utf-8');
-                expect(res).to.be.json;
-                expect(res.body).to.have.property('id')
+				expect(res).to.be.json;
+				expect(res.body).to.have.property('id')
             })
 		})
 	})
